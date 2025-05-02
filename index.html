@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bof - Exclusive E-commerce</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favico.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+        body,
+        html {
+            scroll-behavior: smooth !important;
+        }
+        /* Custom image sizes for different sections */
+        .hero-img {
+            max-width: 300px;
+        }
+        .category-img {
+            max-width: 250px;
+            border-radius: 0.5rem;
+        }
+        .product-img {
+            max-width: 200px;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased px-4 md:px-0">
+    <!-- Header with Navigation -->
+    <header class="border-b">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-6 flex items-center justify-between">
+            <a href="/bof.html" style="font-family: 'Nothing You Could Do', cursive;" class="text-2xl font-bold">bof</a>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#hero" class="hover:text-gray-700">Home</a></li>
+                    <li><a href="#categories" class="hover:text-gray-700">Products</a></li>
+                    <li><a href="#about" class="hover:text-gray-700">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-gray-700">Contact</a></li>
+                    <li><a href="#blog" class="hover:text-gray-700">Blog</a></li>
+                    <li><a href="#cart" class="hover:text-gray-700"><i class="bi bi-cart-fill"></i></a></li>
+                </ul>
+            </nav>
+            <div class="ml-6">
+                <input type="text" placeholder="Search..." class="px-4 py-2 border rounded-lg focus:outline-none">
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-10">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-lg pb-20">
+            <div class="flex flex-col md:flex-row items-center gap-20">
+                <div data-aos="fade-right" data-aos-delay="50">
+                    <img class="hero-img w-full" src="https://images.unsplash.com/photo-1578203550398-4c584bb1737b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwxfHwlMjJib2YlMjJ8ZW58MHx8fHwxNzQ2MTU3NDAxfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="man inside building">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <h1 class="text-3xl font-bold lg:text-5xl pb-6">
+                        Elevate Your Style with <span style="font-family: 'Nothing You Could Do', cursive;">bof</span>
+                    </h1>
+                    <p class="text-xl pb-6">
+                        Discover exclusive collections and the latest trends in fashion. Shop premium quality products that combine style and comfort.
+                    </p>
+                    <a href="#featured" class="inline-block text-white bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                        Shop Now <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <div class="bg-gray-100 p-5 rounded mt-6 max-w-[292px] flex gap-2 items-center">
+                        <div class="flex space-x-1">
+                            <i class="bi bi-star-fill text-gray-900 text-lg"></i>
+                            <i class="bi bi-star-fill text-gray-900 text-lg"></i>
+                            <i class="bi bi-star-fill text-gray-900 text-lg"></i>
+                            <i class="bi bi-star-fill text-gray-900 text-lg"></i>
+                            <i class="bi bi-star-half text-gray-900 text-lg"></i>
+                        </div>
+                        <span class="text-dark text-xs">4.9/5 (275k Reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section id="categories" class="py-10 bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold lg:text-5xl pb-8">Product Categories</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-md text-center" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/250x150?text=Men%27s+Apparel" alt="Men's Apparel" class="category-img mx-auto mb-4">
+                    <h3 class="font-semibold text-lg">Men's Apparel</h3>
+                    <p class="text-sm text-gray-600 mt-2">Find the best in men's fashion and accessories.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md text-center" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/250x150?text=Women%27s+Apparel" alt="Women's Apparel" class="category-img mx-auto mb-4">
+                    <h3 class="font-semibold text-lg">Women's Apparel</h3>
+                    <p class="text-sm text-gray-600 mt-2">Discover stylish designs curated for modern women.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/250x150?text=Accessories" alt="Accessories" class="category-img mx-auto mb-4">
+                    <h3 class="font-semibold text-lg">Accessories</h3>
+                    <p class="text-sm text-gray-600 mt-2">Complete your look with our exclusive accessories.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md text-center" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://via.placeholder.com/250x150?text=Footwear" alt="Footwear" class="category-img mx-auto mb-4">
+                    <h3 class="font-semibold text-lg">Footwear</h3>
+                    <p class="text-sm text-gray-600 mt-2">Step into style with our premium selection of shoes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="py-10">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold lg:text-5xl pb-8">Featured Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/200x200?text=Product+1" alt="Product 1" class="product-img mx-auto mt-4">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl">Classic Leather Jacket</h3>
+                        <p class="text-gray-600 mt-2 text-sm">Premium quality jacket that blends comfort with sophistication.</p>
+                        <p class="mt-4 font-bold text-lg">$129.99</p>
+                        <button class="mt-4 w-full bg-black text-white px-4 py-2 rounded-lg hover:bg-black/80 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/200x200?text=Product+2" alt="Product 2" class="product-img mx-auto mt-4">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl">Elegant Evening Dress</h3>
+                        <p class="text-gray-600 mt-2 text-sm">Make a statement at any event with this timeless design.</p>
+                        <p class="mt-4 font-bold text-lg">$89.99</p>
+                        <button class="mt-4 w-full bg-black text-white px-4 py-2 rounded-lg hover:bg-black/80 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/200x200?text=Product+3" alt="Product 3" class="product-img mx-auto mt-4">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl">Stylish Sneakers</h3>
+                        <p class="text-gray-600 mt-2 text-sm">Experience comfort and style combined in every step.</p>
+                        <p class="mt-4 font-bold text-lg">$59.99</p>
+                        <button class="mt-4 w-full bg-black text-white px-4 py-2 rounded-lg hover:bg-black/80 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-10 bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold lg:text-5xl pb-8">
+                Customer Testimonials
+            </h2>
+            <div class="swiper">
+                <div class="swiper-wrapper items-center flex flex-row">
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div class="bg-white w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-gray-800">“</span>
+                                    I love shopping at bof. The quality is exceptional and the style is always on point.
+                                    <span class="text-lg font-bold text-gray-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profile" src="https://via.placeholder.com/40" class="mx-auto object-cover rounded-full h-10 w-10">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-gray-800">
+                                            Sarah James
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            Verified Customer
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-gray-800">“</span>
+                                    The shopping experience is seamless. I always find something unique at bof.
+                                    <span class="text-lg font-bold text-gray-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profile" src="https://via.placeholder.com/40" class="mx-auto object-cover rounded-full h-10 w-10">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-gray-800">
+                                            Michael Lee
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            Loyal Shopper
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div class="bg-white w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-gray-800">“</span>
+                                    I was impressed by the prompt customer service and excellent product quality.
+                                    <span class="text-lg font-bold text-gray-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profile" src="https://via.placeholder.com/40" class="mx-auto object-cover rounded-full h-10 w-10">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-gray-800">
+                                            Emma Watson
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            Happy Customer
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-gray-800">“</span>
+                                    Fantastic products with unbeatable style and quality. Highly recommend bof!
+                                    <span class="text-lg font-bold text-gray-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profile" src="https://via.placeholder.com/40" class="mx-auto object-cover rounded-full h-10 w-10">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-gray-800">
+                                            David Brown
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            Loyal Customer
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-10">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold lg:text-5xl pb-8">About Us</h2>
+            <p class="text-xl text-gray-700">
+                At bof, we believe in revolutionizing the way you shop. Our mission is to bring you high-quality, trendsetting products that not only elevate your style but also offer unmatched comfort and durability. Founded by fashion enthusiasts, bof is dedicated to curating collections that reflect contemporary lifestyles while honoring timeless elegance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-10 bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold lg:text-5xl pb-8">Contact Us</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                Have questions or need assistance? Reach out to our support team and we’ll get back to you as soon as possible.
+            </p>
+            <form class="grid grid-cols-1 gap-6">
+                <input type="text" placeholder="Your Name" class="px-4 py-2 border rounded-lg focus:outline-none">
+                <input type="email" placeholder="Your Email" class="px-4 py-2 border rounded-lg focus:outline-none">
+                <textarea placeholder="Your Message" class="px-4 py-2 border rounded-lg focus:outline-none" rows="5"></textarea>
+                <button type="submit" class="w-full bg-black text-white px-4 py-2 rounded-lg hover:bg-black/80 transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-10">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <h2 class="text-3xl font-bold lg:text-5xl pb-8">From Our Blog</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/300x200?text=Blog+Post+1" alt="Blog Post 1" class="w-full rounded-lg mb-4">
+                    <h3 class="font-semibold text-xl">Latest Trends in Fashion</h3>
+                    <p class="text-gray-600 mt-2 text-sm">
+                        Explore the most recent trends that are taking the fashion world by storm.
+                    </p>
+                    <a href="#" class="inline-block mt-4 text-black underline">Read More</a>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/300x200?text=Blog+Post+2" alt="Blog Post 2" class="w-full rounded-lg mb-4">
+                    <h3 class="font-semibold text-xl">How to Style Your Outfits</h3>
+                    <p class="text-gray-600 mt-2 text-sm">
+                        Discover tips and tricks to mix and match your wardrobe effortlessly.
+                    </p>
+                    <a href="#" class="inline-block mt-4 text-black underline">Read More</a>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/300x200?text=Blog+Post+3" alt="Blog Post 3" class="w-full rounded-lg mb-4">
+                    <h3 class="font-semibold text-xl">Sustainable Fashion Choices</h3>
+                    <p class="text-gray-600 mt-2 text-sm">
+                        Learn how bof is committed to sustainability and ethical fashion practices.
+                    </p>
+                    <a href="#" class="inline-block mt-4 text-black underline">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-10 flex items-center">
+            <p class="mb-0 text-sm text-center text-gray-700">© Copyright 2023 bof. All Rights Reserved.</p>
+            <button class="ml-auto bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                <svg class="w-5 h-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.8426 17.1449C20.5099 17.9135 20.1161 18.6211 19.6598 19.2715C19.0378 20.1583 18.5286 20.7721 18.1361 21.113C17.5277 21.6724 16.8759 21.959 16.1779 21.9753C15.6768 21.9753 15.0725 21.8327 14.3691 21.5434C13.6633 21.2555 13.0148 21.113 12.4217 21.113C11.7998 21.113 11.1327 21.2555 10.4193 21.5434C9.70469 21.8327 9.12904 21.9834 8.68892 21.9984C8.01957 22.0269 7.35239 21.7322 6.68644 21.113C6.26139 20.7422 5.72974 20.1067 5.09285 19.2063C4.40951 18.2449 3.84772 17.13 3.4076 15.8589C2.93624 14.486 2.69995 13.1565 2.69995 11.8694C2.69995 10.3951 3.01853 9.12345 3.65665 8.05784C4.15815 7.20191 4.82533 6.52672 5.66035 6.03105C6.49537 5.53539 7.39761 5.2828 8.36925 5.26664C8.9009 5.26664 9.59809 5.43109 10.4645 5.75429C11.3284 6.07858 11.8832 6.24303 12.1264 6.24303C12.3082 6.24303 12.9245 6.05074 13.9692 5.66738C14.9571 5.31186 15.7909 5.16466 16.474 5.22264C18.3249 5.37202 19.7155 6.10167 20.6402 7.41619C18.9849 8.4192 18.166 9.82403 18.1823 11.6262C18.1972 13.03 18.7065 14.1981 19.7073 15.1256C20.1609 15.5561 20.6674 15.8888 21.231 16.1251C21.1087 16.4795 20.9797 16.819 20.8426 17.1449ZM16.5975 0.440369C16.5975 1.54062 16.1956 2.56792 15.3944 3.51878C14.4275 4.64917 13.258 5.30236 11.9898 5.19929C11.9736 5.06729 11.9642 4.92837 11.9642 4.78239C11.9642 3.72615 12.424 2.59576 13.2406 1.67152C13.6483 1.20356 14.1667 0.814453 14.7955 0.504058C15.4229 0.198295 16.0163 0.0292007 16.5744 0.000244141C16.5907 0.147331 16.5975 0.294426 16.5975 0.440355V0.440369Z"
+                        fill="white" />
+                </svg>
+            </button>
+        </div>
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 5000
+            },
+            freeMode: true,
+            breakpoints: {
+                1320: {
+                    slidesPerView: 4
+                },
+                1000: {
+                    slidesPerView: 3
+                },
+                700: {
+                    slidesPerView: 2
+                },
+                100: {
+                    slidesPerView: 1
+                }
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
